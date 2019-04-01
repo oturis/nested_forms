@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shopping List Name:</strong>
+  <%= @shopping_list.name %>
+</p>
+<strong>Food Items:</strong>
+<%= @shopping_list.food_items.name %>
+
+<br>
+
+<%= link_to 'Edit', edit_shopping_list_path(@shopping_list) %> |
+<%= link_to 'Back', shopping_lists_path %>
